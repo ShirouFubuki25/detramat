@@ -1,0 +1,181 @@
+/* Estilos gerais */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: rgb(60, 82, 85); /* Azul escuro */
+    color: rgb(231,195,58);
+    padding: 50px;
+}
+
+/* Container do cabeçalho */
+.header-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    position: relative; /* Permite posicionamento absoluto */
+}
+
+/* Container do logo */
+.logo-container {
+    position: absolute; /* Permite posicionar o logo onde você quiser */
+    left: 350px; /* Ajuste a posição do logo */
+}
+
+/* Logo */
+#logo {
+    width: 150px; /* Define a largura do logo */
+    height: auto; /* Mantém a proporção */
+}
+
+/* Container do título */
+.title-container {
+    margin-left: 0px; /* Ajuste o espaço entre o logo e o título */
+}
+
+/* Título */
+.title-container h1 {
+    text-align: center; /* Centraliza o título */
+}
+
+.navbar {
+    background-color: rgb(60, 82, 85); /* Cor de fundo da nav */
+    font-weight: bold;
+    padding: 10px 0; /* Espaçamento interno */
+    font-size: 16px;
+}
+
+.navbar ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Exibe os itens em linha */
+    justify-content: center; /* Centraliza os itens */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+.navbar li {
+    margin: 0 13px; /* Espaçamento entre os itens */
+    position: relative; /* Adicionado para posicionar o submenu corretamente */
+}
+
+.navbar a {
+    color: white; /* Cor do texto */
+    text-decoration: none; 
+    padding: 10px 15px;
+    transition: background-color 0.7s;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    color: rgb(60, 82, 85); /* Cor do texto */
+    background-color: white;
+}
+
+.navbar .submenu {
+    display: none; /* Esconde o submenu por padrão */
+    position: absolute; /* Posiciona o submenu em relação ao item pai */
+    top: 100%; /* Coloca o submenu logo abaixo do item pai */
+    left: 0; /* Alinha à esquerda do item pai */
+    background-color: rgb(60, 82, 85); /* Cor de fundo do submenu */
+    padding: 10px 0; /* Espaçamento interno do submenu */
+    z-index: 1000; /* Garante que o submenu fique acima de outros elementos */
+    min-width: 150px; /* Define uma largura mínima para o submenu */
+}
+
+.navbar li:hover .submenu {
+    display: block; /* Exibe o submenu ao passar o mouse sobre o item pai */
+}
+
+.navbar span {
+    color: white; /* Cor do texto */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.7s;
+    border-radius: 10px;
+    cursor: pointer; /* Mantém o cursor como ponteiro */
+    display: block; /* Garante que ocupe o mesmo espaço que o <a> */
+}
+
+.navbar span:hover {
+    color: rgb(60, 82, 85); /* Cor do texto ao passar o mouse */
+    background-color: white;
+}
+
+.navbar li {
+    margin: 0 13px;
+    position: relative;
+    display: flex;
+    align-items:center;   
+}
+
+.submenu li {
+    margin: 0; /* Remove a margem entre os itens do submenu */
+}
+
+.submenu a {
+    padding: 10px 15px; /* Espaçamento interno dos links do submenu */
+    display: block; /* Faz com que o link ocupe toda a largura do item */
+    color: white; /* Cor do texto do submenu */
+}
+
+.submenu a:hover {
+    background-color: rgb(231,195,58); /* Cor de fundo ao passar o mouse */
+    color: rgb(60, 82, 85); /* Cor do texto ao passar o mouse */
+}
+
+
+/* Conteúdo principal */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.escrita {
+    font-size: 18px;
+}
+
+/* Seção de Contato */
+.contato {
+    background-color: rgb(60, 82, 85);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Cola o rodapé ao final da página */
+}
+
+.contato h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contato ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contato li {
+    margin-bottom: 10px;
+}
+
+.contato a {
+    color: white;
+    text-decoration: none;
+}
+
+.contato a:hover {
+    text-decoration: underline;
+}
